@@ -1,26 +1,13 @@
-.indent-top {
-    margin-top: 5vh;
-}
 .greeting {
     color: #f3f3f3;
     font-family: 'Source Code Pro', monospace;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 400;
     padding-top: 15vh;
-    padding-bottom: 10vh;
+    padding-bottom: 15vh;
     text-align: center;
 }
-.my-btn {
-    padding-left: 30px;
-    padding-right: 30px;
-    font-family: 'Source Code Pro', monospace;
-    font-size: 17px;
-    font-weight: 400;
-    color: #586e75;
-}
-.lilac {
-    color: #6c71c4;
-}
+
 .screen1 {
     background-color: #6c71c4;
     height: 100vh ;
