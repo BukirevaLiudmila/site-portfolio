@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/bootstrap-grid.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:300,400" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <title>Bukireva</title>
 </head>
 <body>
-    <div class="container-fluid screen1">
+<!-----------------------ПЕРВЫЙ ЭКРАН----------------------->
+    <div class="container-fluid screen screen1-color">
         <div class="row justify-content-center">
             <div class="greeting">Привет! Меня зовут Букирёва Людмила.<br>Я - web-разработчик. Листай вниз и узнай обо мне больше.</div>
         </div>
@@ -17,10 +18,26 @@
             <img src="images/myPhoto.png" alt="Это я">
         </div>
         <div class="row justify-content-center">
-            <img class="indent-top" src="images/arrow.png" alt="стрелка">
+            <img class="margin-top1" src="images/arrow.png" alt="стрелка">
         </div>
         <div class="row justify-content-center">
-            <button type="button" class="btn btn-secondary indent-top my-btn">Скачать резюме</button>
+            <button type="button" class="btn btn-secondary margin-top1 grey my-btn">Скачать резюме</button>
+        </div>
+    </div>
+<!-----------------------ВТОРОЙ ЭКРАН----------------------->
+    <div class="container-fluid screen screen2-color">
+        <div class="row justify-content-center">
+            <div class="margin-top1 lilac">< Навыки ></div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="container">
+                <div class="progress margin-top2">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="progress margin-top1">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
         </div>
     </div>
 </body>

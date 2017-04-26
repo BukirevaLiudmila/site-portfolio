@@ -1,27 +1,41 @@
-.indent-top {
-    margin-top: 5vh;
+* {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 22px;
 }
 .greeting {
     color: #f3f3f3;
-    font-family: 'Source Code Pro', monospace;
     font-size: 22px;
-    font-weight: 400;
     padding-top: 15vh;
     padding-bottom: 10vh;
     text-align: center;
 }
-.my-btn {
-    padding-left: 30px;
-    padding-right: 30px;
-    font-family: 'Source Code Pro', monospace;
-    font-size: 17px;
-    font-weight: 400;
+.grey {
     color: #586e75;
+}
+.margin-top1 {
+    margin-top: 5vh;
+}
+.margin-top2 {
+    margin-top: 15vh;
 }
 .lilac {
     color: #6c71c4;
 }
-.screen1 {
-    background-color: #6c71c4;
+.my-btn {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 17px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.screen {
     height: 100vh ;
+}
+.screen1-color {
+    background-color: #6c71c4;
+}
+.screen2-color {
+    background-color: #dadada;
+}
+.screen4-color {
+    background-color: #c0dcc0;
 }
