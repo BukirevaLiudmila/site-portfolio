@@ -2,6 +2,9 @@
     font-family: 'Source Code Pro', monospace;
     font-size: 22px;
 }
+.base3 {
+    color: #fdf6e3;
+}
 .bg-green {
     background-color: #71b783;
 }
@@ -18,14 +21,8 @@
 .grey {
     color: #586e75;
 }
-.margin-top1 {
-    margin-top: 5vh;
-}
-.margin-top2 {
-    margin-top: 15vh;
-}
 .progress-font {
-    font-size: 18px;
+    font-size: 19px;
     font-weight: 300;
 }
 .lilac {
@@ -38,11 +35,24 @@
     padding-right: 30px;
 }
 .screen {
-    height: 100vh ;
+    height: 100vh;
+    min-width: 800px;
 }
 .screen2-color {
     background-color: #dadada;
 }
 .screen4-color {
     background-color: #c0dcc0;
+}
+.padding-sm {
+    padding-top: 50px;
+}
+.padding-md {
+    padding-top: 150px;
+}
+.padding-lg {
+    padding-top: 200px;
+}
+.year {
+    text-align: right;
 }
