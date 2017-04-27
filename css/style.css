@@ -2,6 +2,12 @@
     font-family: 'Source Code Pro', monospace;
     font-size: 22px;
 }
+.bg-green {
+    background-color: #71b783;
+}
+.bg-lilac {
+    background-color: #6c71c4;
+}
 .greeting {
     color: #f3f3f3;
     font-size: 22px;
@@ -18,6 +24,10 @@
 .margin-top2 {
     margin-top: 15vh;
 }
+.progress-font {
+    font-size: 18px;
+    font-weight: 300;
+}
 .lilac {
     color: #6c71c4;
 }
@@ -29,9 +39,6 @@
 }
 .screen {
     height: 100vh ;
-}
-.screen1-color {
-    background-color: #6c71c4;
 }
 .screen2-color {
     background-color: #dadada;
