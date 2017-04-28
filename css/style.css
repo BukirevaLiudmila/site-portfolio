@@ -8,6 +8,11 @@
 .align-portfolio {
     text-align: center;
 }
+.bg-echeveria {
+    background-color: #fdf6e3;
+    background-image: url('../images/echeveria.png');
+    background-size: cover;
+}
 .bg-green {
     background-color: #71b783;
 }
@@ -23,6 +28,9 @@
 .bg-triangles {
     background-color: #586e75;
     background-image: url('../images/triangles.png');
+}
+.cursor-pointer {
+    cursor: pointer;
 }
 .greeting {
     color: #f3f3f3;
