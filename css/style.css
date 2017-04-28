@@ -2,14 +2,27 @@
     font-family: 'Source Code Pro', monospace;
     font-size: 22px;
 }
-.base3 {
-    color: #fdf6e3;
+.align-year {
+    text-align: right;
+}
+.align-portfolio {
+    text-align: center;
 }
 .bg-green {
     background-color: #71b783;
 }
 .bg-lilac {
     background-color: #6c71c4;
+}
+.bg-mint {
+    background-color: #c0dcc0;
+}
+.bg-silver  {
+    background-color: #dadada;
+}
+.bg-triangles {
+    background-color: #586e75;
+    background-image: url('../images/triangles.png');
 }
 .greeting {
     color: #f3f3f3;
@@ -18,7 +31,7 @@
     padding-bottom: 10vh;
     text-align: center;
 }
-.grey {
+.gray {
     color: #586e75;
 }
 .progress-font {
@@ -38,21 +51,21 @@
     height: 100vh;
     min-width: 800px;
 }
-.screen2-color {
-    background-color: #dadada;
+.padding-left {
+    padding-left: 3vw;
 }
-.screen4-color {
-    background-color: #c0dcc0;
+.padding-right {
+    padding-right: 3vw;
 }
-.padding-sm {
-    padding-top: 50px;
-}
-.padding-md {
-    padding-top: 150px;
-}
-.padding-lg {
+.padding-top-lg {
     padding-top: 200px;
 }
-.year {
-    text-align: right;
+.padding-top-md {
+    padding-top: 150px;
+}
+.padding-top-sm {
+    padding-top: 50px;
+}
+.pearl {
+    color: #fdf6e3;
 }
