@@ -18,7 +18,7 @@
             <img src="images/myPhoto.png" alt="Это я">
         </div>
         <div class="row justify-content-center">
-            <img class="padding-top-sm" src="images/arrow.png" alt="стрелка">
+            <img src="images/arrow.png" alt="стрелка" class="padding-top-sm">
         </div>
         <div class="row justify-content-center">
             <div class="padding-top-sm">
@@ -90,7 +90,7 @@
         </div>
         <div class="row flex-nowrap">
             <div class="col-sm-5 padding-top-sm align-year">2018</div>
-            <div class="col-sm-5 padding-top-sm">Университет ИТМО, Санкт-Петербург<br>Магистратура<br>Web-технологии</div>
+            <div class="col-sm-5 padding-top-sm">ИТМО, Санкт-Петербург<br>Магистратура<br>Web-технологии</div>
         </div>
     </div>
 <!-----------------------ПОРТФОЛИО----------------------->
@@ -100,11 +100,11 @@
         </div>
         <div class="row justify-content-center padding-top-lg">
             <div class="cursor-pointer padding-right" onclick="location.href='http://bukirevala.wixsite.com/anomalisa'">
-                <img src="images/wix.png" alt="Это я">
+                <img src="images/wix.png" alt="Wix" class="zoom">
                 <div class="align-portfolio">Блог путешественника</div>
             </div>
             <div class="cursor-pointer padding-left" onclick="location.href='http://bukirevala.wixsite.com/anomalisa'">
-                <img src="images/site-portfolio.png" alt="Это я">
+                <img src="images/site-portfolio.png" alt="Сайт-портфолио" class="zoom">
                 <div class="align-portfolio">Сайт-портфолио</div>
             </div>
         </div>
@@ -118,7 +118,23 @@
 <!-----------------------КОНТАКТЫ----------------------->
 <div class="container-fluid bg-echeveria lilac screen">
     <div class="row justify-content-center">
-        <div class="padding-top-sm">< Почему я? ></div>
+        <div class="padding-top-sm">< Контакты ></div>
+    </div>
+    <div class="row justify-content-center padding-top-lg">
+        <div>
+            <form name="">
+                <div class="row justify-content-center">
+                    <input type="text" name="name" size="15" value="Имя" maxlength="25">
+                    <input type="email" name="email" size="15" value="E-mail" maxlength="25">
+                </div>
+                <div class="row justify-content-center">
+                    <textarea name="message" cols="38" rows="6" maxlength="300" placeholder="Сообщение"></textarea>
+                </div>
+                <div class="row justify-content-center">
+                    <button type="submit">Отправить</button>
+                </div>
+            </form>
+        </div>
     </div>
 </div>
 </body>
