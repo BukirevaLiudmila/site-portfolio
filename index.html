@@ -121,29 +121,35 @@
         <div class="padding-top-sm">< Контакты ></div>
     </div>
     <div class="row padding-top-lg">
-        <div class="col-sm-4 offset-sm-2">
+        <div class="col-sm-3 offset-sm-2">
             <form name="contact">
                 <div class="row justify-content-center">
-                    <input type="text" name="name" size="15" value="Имя" maxlength="25">
-                    <input type="email" name="email" size="15" value="E-mail" maxlength="25">
+                        <input type="text" name="name" value="Имя" maxlength="25" class="col-sm-6">
+                        <input type="email" name="email" value="E-mail" maxlength="25" class="col-sm-6">
                 </div>
                 <div class="row justify-content-center">
-                    <textarea name="message" cols="38" rows="6" maxlength="300" placeholder="Сообщение"></textarea>
+                    <textarea name="message" cols="38" rows="6" maxlength="300" placeholder="Сообщение" class="col-sm-12"></textarea>
                 </div>
                 <div class="row justify-content-center">
                     <button type="submit">Отправить</button>
                 </div>
             </form>
         </div>
-        <div class="col-sm-5 offset-sm-1">
+        <div class="col-sm-5 offset-sm-2">
             <div itemscope itemtype="http://schema.org/Person">
                 <div>
-                    <a href="tel:84951810042" itemprop="telephone">7 (911) 179-60-25</a>
-                    /div>
+                    <span><img src="images/phone.png"></span>
+                    <span>Телефон:</span>
+                    <span><a href="tel:84951810042" itemprop="telephone">+7(911)179-60-25</a></span>
+                </div>
                 <div>
-                    <a href="mailto:bukirevala@gmail.com" itemprop="email">bukirevala@gmail.com</a>
+                    <span><img src="images/email.png"></span>
+                    <span>E-mail:</span>
+                    <span><a href="mailto:bukirevala@gmail.com" itemprop="email">bukirevala@gmail.com</a></span>
                 </div>
                 <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                    <span><img src="images/location.png"></span>
+                    <span>Город:</span>
                     <span itemprop="addressLocality">Санкт-Петербург</span>
                 </div>
             </div>
