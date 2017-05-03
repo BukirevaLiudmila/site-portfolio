@@ -32,6 +32,9 @@
 .cursor-pointer {
     cursor: pointer;
 }
+.input {
+    width: inherit;
+}
 .greeting {
     color: #f3f3f3;
     font-size: 22px;
@@ -41,10 +44,6 @@
 }
 .gray {
     color: #586e75;
-}
-.progress-font {
-    font-size: 19px;
-    font-weight: 300;
 }
 .lilac {
     color: #6c71c4;
@@ -62,8 +61,14 @@
 .padding-left {
     padding-left: 3vw;
 }
+.padding-left-sm {
+    padding: 0px 0px 0px 5px;
+}
 .padding-right {
     padding-right: 3vw;
+}
+.padding-right-sm {
+    padding: 0px 5px 0px 0px;
 }
 .padding-top-lg {
     padding-top: 200px;
@@ -74,8 +79,15 @@
 .padding-top-sm {
     padding-top: 50px;
 }
+.padding-top-xsm {
+    padding-top: 10px;
+}
 .pearl {
     color: #fdf6e3;
+}
+.progress-font {
+    font-size: 19px;
+    font-weight: 300;
 }
 .zoom:hover {
     zoom: 1.05;

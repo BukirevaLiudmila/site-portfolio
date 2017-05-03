@@ -120,41 +120,53 @@
     <div class="row justify-content-center">
         <div class="padding-top-sm">< Контакты ></div>
     </div>
-    <div class="row padding-top-lg">
-        <div class="col-sm-3 offset-sm-2">
+    <div class="row justify-content-center padding-top-lg">
+        <div class="col-sm-3 offset-sm-1 row">
             <form name="contact">
-                <div class="row justify-content-center">
-                        <input type="text" name="name" value="Имя" maxlength="25" class="col-sm-6">
-                        <input type="email" name="email" value="E-mail" maxlength="25" class="col-sm-6">
-                </div>
-                <div class="row justify-content-center">
-                    <textarea name="message" cols="38" rows="6" maxlength="300" placeholder="Сообщение" class="col-sm-12"></textarea>
-                </div>
-                <div class="row justify-content-center">
-                    <button type="submit">Отправить</button>
-                </div>
+            <div class="row">
+                    <div class="col-sm-6 padding-right-sm ">
+                        <input type="text" name="name" value="Имя" maxlength="25" class="input padding-left-sm">
+                    </div>
+                    <div class="col-sm-6 padding-left-sm">
+                        <input type="email" name="email" value="E-mail" maxlength="25" class="input padding-left-sm">
+                    </div>
+            </div>
+            <div class="row padding-top-xsm">
+                <textarea name="message" rows="6" maxlength="300" placeholder="Сообщение" class="col-sm-12 padding-left-sm"></textarea>
+            </div>
+            <div class="row padding-top-xsm">
+                <button type="submit">Отправить</button>
+            </div>
             </form>
         </div>
-        <div class="col-sm-5 offset-sm-2">
-            <div itemscope itemtype="http://schema.org/Person">
+        <div itemscope itemtype="http://schema.org/Person" class="col-sm-5 offset-sm-1 row">
+            <div class="col-sm-3">
                 <div>
                     <span><img src="images/phone.png"></span>
                     <span>Телефон:</span>
-                    <span><a href="tel:84951810042" itemprop="telephone">+7(911)179-60-25</a></span>
                 </div>
                 <div>
                     <span><img src="images/email.png"></span>
                     <span>E-mail:</span>
+                </div>
+                <div>
+                    <span><img src="images/location.png"></span>
+                    <span>Город:</span>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div>
+                    <span><a href="tel:84951810042" itemprop="telephone">+7(911)179-60-25</a></span>
+                </div>
+                <div>
                     <span><a href="mailto:bukirevala@gmail.com" itemprop="email">bukirevala@gmail.com</a></span>
                 </div>
                 <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                    <span><img src="images/location.png"></span>
-                    <span>Город:</span>
                     <span itemprop="addressLocality">Санкт-Петербург</span>
                 </div>
             </div>
+            </div>
         </div>
-    </div>
 </div>
 </body>
 </html>
