@@ -33,6 +33,14 @@
     cursor: pointer;
 }
 .input {
+    border: none;
+    border-radius: 5px;
+    background-color: #586e75 ;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 300;
+    font-size: 18px;
+    opacity: 0.4;
+    padding: 5px 0px 5px 10px;
     width: inherit;
 }
 .greeting {
@@ -42,13 +50,17 @@
     padding-bottom: 10vh;
     text-align: center;
 }
-.gray {
+.color-gray {
     color: #586e75;
 }
-.lilac {
+.color-lilac {
     color: #6c71c4;
 }
+.color-pearl {
+    color: #fdf6e3;
+}
 .my-btn {
+    border: none;
     font-family: 'Source Code Pro', monospace;
     font-size: 17px;
     padding-left: 30px;
@@ -82,12 +94,29 @@
 .padding-top-xsm {
     padding-top: 10px;
 }
-.pearl {
-    color: #fdf6e3;
-}
 .progress-font {
     font-size: 19px;
     font-weight: 300;
+}
+.textarea {
+    outline: none;
+    overflow: auto;
+    resize: none;
+    padding-top: 5px;
+}
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: #fdf6e3;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #fdf6e3;
+    opacity: 1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #fdf6e3;
+    opacity: 1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #fdf6e3;
 }
 .zoom:hover {
     zoom: 1.05;
