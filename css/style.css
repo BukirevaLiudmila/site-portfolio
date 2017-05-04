@@ -2,78 +2,112 @@
     font-family: 'Roboto Mono', monospace;
     font-size: 22px;
 }
-                                        /*  ОФОРМЛЕНИЕ ССЫЛОК */
+
+span {
+    color: #586e75;
+    font-size: 18px;
+}
+
+/*  ОФОРМЛЕНИЕ ССЫЛОК */
 a:link {
     font-size: 18px;
     color: #586e75;
     text-decoration: none;
 }
+
 a:hover {
     color: #6c71c4;
 }
+
 a:active {
     font-weight: bold;
 }
-span {
-    color: #586e75;
-    font-size: 18px;
+
+.portfolio-element {
+    padding: 0 3vw;
 }
-                                          /*  ВЫРАВНИВАНИЕ */
-.align-year {
-    text-align: right;
+
+.portfolio-element > div {
+    cursor: pointer;
 }
-                                             /*  ЦВЕТ ФОНА */
+
+/*  ОФОРМЛЕНИЕ ФОНА */
 .bg-echeveria {
     background-color: #fdf6e3;
     background-image: url('../images/echeveria.png');
     background-size: cover;
 }
+
 .bg-green {
     background-color: #71b783;
 }
+
 .bg-lilac {
     background-color: #6c71c4;
 }
+
 .bg-mint {
     background-color: #c0dcc0;
 }
-.bg-silver  {
+
+.bg-silver {
     background-color: #dadada;
 }
+
 .bg-triangles {
     background-color: #586e75;
     background-image: url('../images/triangles.png');
 }
-                                                /*  ЦВЕТ ТЕКСТА */
+
+/*  ОФОРМЛЕНИЕ ТЕКСТА */
+.align-year {
+    text-align: right;
+}
+
 .color-gray {
     color: #586e75;
 }
+
 .color-lilac {
     color: #6c71c4;
 }
+
 .color-pearl {
     color: #fdf6e3;
 }
-.cursor-pointer {
-    cursor: pointer;
-}
+
 .education {
     font-size: 20px;
     font-weight: 300;
+    padding-top: 200px;
 }
-                                /*  ОФОРМЛЕНИЕ ФОРМЫ ДЛЯ СВЯЗИ */
-.input {
+
+.portfolio-text {
+    font-size: 19px;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.progress-font {
+    font-size: 19px;
+    font-weight: 300;
+}
+
+/*  ОФОРМЛЕНИЕ ФОРМЫ ДЛЯ СВЯЗИ */
+.form-element {
     border: none;
     border-radius: 5px;
-    background-color: #586e75 ;
+    background-color: #586e75;
     font-family: 'Roboto Mono', monospace;
     font-weight: 300;
     font-size: 16px;
     opacity: 0.4;
-    padding: 5px 0px 5px 10px;
+    padding: 8px 0px 8px 10px;
     width: inherit;
 }
-                            /*  ОФОРМЛЕНИЕ ТЕКСТА ПРИВЕТСТВИЯ */
+
+/*  ОФОРМЛЕНИЕ ТЕКСТА ПРИВЕТСТВИЯ */
 .greeting {
     color: #f3f3f3;
     font-size: 22px;
@@ -81,89 +115,104 @@ span {
     padding-bottom: 10vh;
     text-align: center;
 }
-                                        /* ШИРИНА БЛОКОВ КОНТАКТЫ */
-.min-width-contact-left {
+
+/* ШИРИНА БЛОКОВ КОНТАКТЫ */
+.contact-key {
     min-width: 166px;
 }
-.min-width-contact-right {
+
+.contact-value {
     min-width: 248px;
     padding-left: 0px;
 }
-                                    /*  ОФОРМЛЕНИЕ КНОПОК */
+
+.contact {
+    min-width: 500px;
+}
+
+/*  ОФОРМЛЕНИЕ КНОПОК */
 .my-btn {
     border: none;
+    cursor: pointer;
     font-family: 'Roboto Mono', monospace;
     font-size: 17px;
-
     padding-left: 30px;
     padding-right: 30px;
 }
-                                        /*  РАЗМЕР ЭКРАНА */
+
+/*  РАЗМЕР ЭКРАНА */
 .screen {
     height: 100vh;
-    min-width: 1100px;
+    min-width: 1200px;
+    overflow: auto;
 }
-                                            /*  ОТСТУПЫ */
-.padding-bottom-xsm {
-    padding-bottom: 5px;
+
+/*  ОТСТУПЫ */
+.container:first-child {
+    padding-top: 150px;
 }
+
+form > div.row {
+    padding-bottom: 8px;
+}
+
 .padding-left {
     padding-left: 3vw;
 }
+
 .padding-left-sm {
     padding: 0px 0px 0px 5px;
 }
+
 .padding-right {
     padding-right: 3vw;
 }
+
 .padding-right-sm {
     padding: 0px 5px 0px 0px;
 }
+
 .padding-top-lg {
     padding-top: 200px;
 }
-.padding-top-md {
-    padding-top: 150px;
-}
+
 .padding-top-sm {
     padding-top: 50px;
 }
+
 .padding-top-xsm {
     padding-top: 10px;
 }
-.portfolio {
-    font-size: 19px;
-    font-weight: 300;
-    text-align: center;
-    padding-top: 5px;
-}
-.progress-font {
-    font-size: 19px;
-    font-weight: 300;
-}
-                       /*  ОФОРМЛЕНИЕ ТЕКСТОВОГО ПОЛЯ */
+
+/*  ОФОРМЛЕНИЕ ТЕКСТОВОГО ПОЛЯ */
 .textarea {
+    min-width: 500px;
     outline: none;
     overflow: auto;
     resize: none;
     padding-top: 5px;
 }
-                      /*  ЦВЕТ ТЕКСТА В PLACEHOLDER  */
+
+/*  ЦВЕТ ТЕКСТА В PLACEHOLDER  */
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color: #fdf6e3;
 }
+
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
     color: #fdf6e3;
     opacity: 1;
 }
+
 ::-moz-placeholder { /* Mozilla Firefox 19+ */
     color: #fdf6e3;
     opacity: 1;
 }
+
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
     color: #fdf6e3;
 }
-                                            /*  ZOOM  */
+
+/*  ZOOM  */
 .zoom:hover {
     zoom: 1.05;
 }
