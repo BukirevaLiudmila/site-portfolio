@@ -1,5 +1,5 @@
 * {
-    font-family: 'Source Code Pro', monospace;
+    font-family: 'Roboto Mono', monospace;
     font-size: 22px;
 }
                                         /*  ОФОРМЛЕНИЕ ССЫЛОК */
@@ -16,14 +16,11 @@ a:active {
 }
 span {
     color: #586e75;
-    font-size: 20px;
+    font-size: 18px;
 }
                                           /*  ВЫРАВНИВАНИЕ */
 .align-year {
     text-align: right;
-}
-.align-portfolio {
-    text-align: center;
 }
                                              /*  ЦВЕТ ФОНА */
 .bg-echeveria {
@@ -47,9 +44,6 @@ span {
     background-color: #586e75;
     background-image: url('../images/triangles.png');
 }
-.city {
-    font-size: 20px;
-}
                                                 /*  ЦВЕТ ТЕКСТА */
 .color-gray {
     color: #586e75;
@@ -63,14 +57,18 @@ span {
 .cursor-pointer {
     cursor: pointer;
 }
+.education {
+    font-size: 20px;
+    font-weight: 300;
+}
                                 /*  ОФОРМЛЕНИЕ ФОРМЫ ДЛЯ СВЯЗИ */
 .input {
     border: none;
     border-radius: 5px;
     background-color: #586e75 ;
-    font-family: 'Source Code Pro', monospace;
+    font-family: 'Roboto Mono', monospace;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 16px;
     opacity: 0.4;
     padding: 5px 0px 5px 10px;
     width: inherit;
@@ -94,8 +92,9 @@ span {
                                     /*  ОФОРМЛЕНИЕ КНОПОК */
 .my-btn {
     border: none;
-    font-family: 'Source Code Pro', monospace;
+    font-family: 'Roboto Mono', monospace;
     font-size: 17px;
+
     padding-left: 30px;
     padding-right: 30px;
 }
@@ -131,6 +130,12 @@ span {
 }
 .padding-top-xsm {
     padding-top: 10px;
+}
+.portfolio {
+    font-size: 19px;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 5px;
 }
 .progress-font {
     font-size: 19px;
