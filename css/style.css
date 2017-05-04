@@ -14,6 +14,10 @@ a:hover {
 a:active {
     font-weight: bold;
 }
+span {
+    color: #586e75;
+    font-size: 20px;
+}
                                           /*  ВЫРАВНИВАНИЕ */
 .align-year {
     text-align: right;
@@ -43,6 +47,19 @@ a:active {
     background-color: #586e75;
     background-image: url('../images/triangles.png');
 }
+.city {
+    font-size: 20px;
+}
+                                                /*  ЦВЕТ ТЕКСТА */
+.color-gray {
+    color: #586e75;
+}
+.color-lilac {
+    color: #6c71c4;
+}
+.color-pearl {
+    color: #fdf6e3;
+}
 .cursor-pointer {
     cursor: pointer;
 }
@@ -66,22 +83,13 @@ a:active {
     padding-bottom: 10vh;
     text-align: center;
 }
-                                            /*  ЦВЕТ ТЕКСТА */
-.color-gray {
-    color: #586e75;
-}
-.color-lilac {
-    color: #6c71c4;
-}
-.color-pearl {
-    color: #fdf6e3;
-}
-                                        /* МИНИМАЛЬНАЯ ШИРИНА БЛОКОВ КОНТАКТЫ */
+                                        /* ШИРИНА БЛОКОВ КОНТАКТЫ */
 .min-width-contact-left {
     min-width: 166px;
 }
 .min-width-contact-right {
     min-width: 248px;
+    padding-left: 0px;
 }
                                     /*  ОФОРМЛЕНИЕ КНОПОК */
 .my-btn {
@@ -97,6 +105,9 @@ a:active {
     min-width: 1100px;
 }
                                             /*  ОТСТУПЫ */
+.padding-bottom-xsm {
+    padding-bottom: 5px;
+}
 .padding-left {
     padding-left: 3vw;
 }
