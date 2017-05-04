@@ -2,12 +2,14 @@
     font-family: 'Source Code Pro', monospace;
     font-size: 22px;
 }
+                                          /*  ВЫРАВНИВАНИЕ */
 .align-year {
     text-align: right;
 }
 .align-portfolio {
     text-align: center;
 }
+                                             /*  ЦВЕТ ФОНА */
 .bg-echeveria {
     background-color: #fdf6e3;
     background-image: url('../images/echeveria.png');
@@ -32,6 +34,7 @@
 .cursor-pointer {
     cursor: pointer;
 }
+                                /*  ОФОРМЛЕНИЕ ФОРМЫ ДЛЯ СВЯЗИ */
 .input {
     border: none;
     border-radius: 5px;
@@ -43,6 +46,7 @@
     padding: 5px 0px 5px 10px;
     width: inherit;
 }
+                            /*  ОФОРМЛЕНИЕ ТЕКСТА ПРИВЕТСТВИЯ */
 .greeting {
     color: #f3f3f3;
     font-size: 22px;
@@ -50,6 +54,7 @@
     padding-bottom: 10vh;
     text-align: center;
 }
+                                            /*  ЦВЕТ ТЕКСТА */
 .color-gray {
     color: #586e75;
 }
@@ -59,6 +64,7 @@
 .color-pearl {
     color: #fdf6e3;
 }
+                                    /*  ОФОРМЛЕНИЕ КНОПОК */
 .my-btn {
     border: none;
     font-family: 'Source Code Pro', monospace;
@@ -66,21 +72,23 @@
     padding-left: 30px;
     padding-right: 30px;
 }
+                                        /*  РАЗМЕР ЭКРАНА */
 .screen {
     height: 100vh;
     min-width: 800px;
 }
+                                            /*  ОТСТУПЫ */
 .padding-left {
     padding-left: 3vw;
 }
 .padding-left-sm {
-    padding: 0px 0px 0px 5px;
+    padding-left: 5px;
 }
 .padding-right {
     padding-right: 3vw;
 }
 .padding-right-sm {
-    padding: 0px 5px 0px 0px;
+    padding-right: 5px;
 }
 .padding-top-lg {
     padding-top: 200px;
@@ -98,12 +106,14 @@
     font-size: 19px;
     font-weight: 300;
 }
+                       /*  ОФОРМЛЕНИЕ ТЕКСТОВОГО ПОЛЯ */
 .textarea {
     outline: none;
     overflow: auto;
     resize: none;
     padding-top: 5px;
 }
+                      /*  ЦВЕТ ТЕКСТА В PLACEHOLDER  */
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color: #fdf6e3;
 }
@@ -118,6 +128,7 @@
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
     color: #fdf6e3;
 }
+                                            /*  ZOOM  */
 .zoom:hover {
     zoom: 1.05;
 }
