@@ -156,7 +156,7 @@ div.icon > img {
 
 /*  РАЗМЕР ЭКРАНА */
 .screen {
-    height: 100vh;
+    height: 960px;
     min-width: 1200px;
     overflow: auto;
 }
@@ -217,4 +217,11 @@ form > div.row {
 /*  ZOOM  */
 .zoom:hover {
     zoom: 1.05;
+}
+
+.progress-bar {
+    -webkit-transition-duration: 2s;
+    -o-transition-duration: 2s;
+    -moz-transition-duration: 2s;
+    transition-duration: 2s;
 }
