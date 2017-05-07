@@ -260,3 +260,21 @@ form > div.row {
     -moz-transition-duration: 2s;
     transition-duration: 2s;
 }
+
+.scroll-circles {
+    position: fixed;
+    right: 20px;
+    top: 40%;
+    z-index: 1;
+}
+
+.circle {
+    padding: 0px 0px 10px 0px;
+}
+
+/* TEST */
+/*
+.menu_class ul .current_page_item a:hover, .menu_class ul li a:hover, .menu_class ul .current_page_parent a:hover {
+    background: url("imageloacation") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: #ffffff;
+}*/
