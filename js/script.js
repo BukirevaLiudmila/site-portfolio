@@ -8,7 +8,7 @@ function isVisible(elem) {
 
 function showVisible() {
     var progressBars = document.getElementsByClassName('progress-bar');
-    for (let i = 0; i < progressBars.length; i++) {
+    for (var i = 0; i < progressBars.length; i++) {
         var bar = progressBars[i];
         var showed = bar.getAttribute('data-showed');
         if (showed == 'true') continue;
@@ -22,3 +22,14 @@ function showVisible() {
 
 window.onscroll = showVisible;
 showVisible();
+var edgeOffset = 0; // px
+zenscroll.setup(null, edgeOffset);
+function scroll(e) {
+    var to = e.target.getAttribute('data-scroll-to');
+    var screen = document.getElementById(to);
+    zenscroll.to(screen);
+}
+
+document.querySelectorAll('.circle').forEach(function (el) {
+    el.addEventListener('click', scroll);
+});

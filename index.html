@@ -13,26 +13,26 @@
 <!-----------------------МЕНЮ----------------------->
 <div class="scroll-circles">
     <div class="circle">
-        <img src="./images/circle.png" class="row circle">
+        <img src="./images/circle.png" data-scroll-to="screen-greeting" class="row circle">
     </div>
     <div class="circle">
-        <img src="./images/circle.png" class="row circle">
+        <img src="./images/circle.png" data-scroll-to="screen-skills" class="row circle">
     </div>
     <div class="circle">
-        <img src="./images/circle.png" class="row circle">
+        <img src="./images/circle.png" data-scroll-to="screen-education" class="row circle">
     </div>
     <div class="circle">
-        <img src="./images/circle.png" class="row circle">
+        <img src="./images/circle.png" data-scroll-to="screen-portfolio" class="row circle">
     </div>
     <div class="circle">
-        <img src="./images/circle.png" class="row circle">
+        <img src="./images/circle.png" data-scroll-to="screen-why-i" class="row circle">
     </div>
     <div class="circle">
-        <img src="./images/circle.png" class="row circle">
+        <img src="./images/circle.png" data-scroll-to="screen-contacts" class="row circle">
     </div>
 </div>
 <!-----------------------ПРИВЕТСТВИЕ----------------------->
-<div class="container-fluid screen bg-lilac">
+<div class="container-fluid screen bg-lilac" id="screen-greeting">
     <div class="row justify-content-center">
         <div class="greeting">Привет! Меня зовут Букирёва Людмила.<br>Я - web-разработчик. Листай вниз и узнай обо мне
             больше.
@@ -51,7 +51,7 @@
     </div>
 </div>
 <!-----------------------НАВЫКИ----------------------->
-<div class="container-fluid screen bg-silver">
+<div class="container-fluid screen bg-silver" id="screen-skills">
     <div class="row justify-content-center">
         <div class="padding-top-sm color-lilac">< Навыки ></div>
     </div>
@@ -107,7 +107,7 @@
     </div>
 </div>
 <!-----------------------ОБРАЗОВАНИЕ----------------------->
-<div class="container-fluid bg-triangles screen color-pearl">
+<div class="container-fluid bg-triangles screen color-pearl" id="screen-education">
     <div class="row justify-content-center">
         <div class="padding-top-sm">< Образование ></div>
     </div>
@@ -123,7 +123,7 @@
     </div>
 </div>
 <!-----------------------ПОРТФОЛИО----------------------->
-<div class="container-fluid bg-mint color-gray screen">
+<div class="container-fluid bg-mint color-gray screen" id="screen-portfolio">
     <div class="row justify-content-center">
         <div class="padding-top-sm">< Портфолио ></div>
     </div>
@@ -143,13 +143,13 @@
     </div>
 </div>
 <!-----------------------ПОЧЕМУ Я?----------------------->
-<div class="container-fluid bg-lilac color-pearl screen">
+<div class="container-fluid bg-lilac color-pearl screen" id="screen-why-i">
     <div class="row justify-content-center">
         <div class="padding-top-sm">< Почему я? ></div>
     </div>
 </div>
 <!-----------------------КОНТАКТЫ----------------------->
-<div class="container-fluid bg-echeveria screen">
+<div class="container-fluid bg-echeveria screen" id="screen-contacts">
     <div class="row justify-content-center">
         <div class="color-lilac padding-top-sm">< Контакты ></div>
     </div>
@@ -219,6 +219,7 @@
         <div class="color-gray copyright">© Copyright 2017 Букирёва Людмила</div>
     </div>
 </div>
+<script src="./js/zenscroll-min.js"></script>
 <script src="./js/script.js"></script>
 </body>
 </html>
