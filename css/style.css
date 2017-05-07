@@ -269,12 +269,9 @@ form > div.row {
 }
 
 .circle {
-    padding: 0px 0px 10px 0px;
+    padding: 0px 0px 20px 0px;
 }
 
-/* TEST */
-/*
-.menu_class ul .current_page_item a:hover, .menu_class ul li a:hover, .menu_class ul .current_page_parent a:hover {
-    background: url("imageloacation") repeat scroll 0 0 rgba(0, 0, 0, 0);
-    color: #ffffff;
-}*/
+.circle > img {
+    cursor: pointer;
+}
