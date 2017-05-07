@@ -111,9 +111,16 @@ a:active {
 .greeting {
     color: #f3f3f3;
     font-size: 22px;
-    padding-top: 15vh;
-    padding-bottom: 10vh;
+    padding-top: 150px;
+    padding-bottom: 100px;
     text-align: center;
+}
+
+@media (max-width: 1440px) {
+    .greeting {
+        padding-top: 100px;
+        padding-bottom: 70px;
+    }
 }
 
 /* ШИРИНА БЛОКОВ КОНТАКТЫ */
@@ -129,17 +136,30 @@ a:active {
 .contact {
     min-width: 500px;
 }
+
 .copyright {
     font-size: 12px;
     padding-top: 10px;
 }
+
 .icons {
     max-width: 250px;
     min-width: 250px;
+    padding-top: 200px;
 }
+
+@media (max-width: 1440px) {
+    .icons {
+        max-width: 250px;
+        min-width: 250px;
+        padding-top: 100px;
+    }
+}
+
 .icon {
     padding: 50px 0px 0px;
 }
+
 div.icon > img {
     cursor: pointer;
 }
@@ -156,14 +176,29 @@ div.icon > img {
 
 /*  РАЗМЕР ЭКРАНА */
 .screen {
-    height: 960px;
+    height: 1000px;
     min-width: 1200px;
     overflow: auto;
+}
+@media (max-width: 1440px) {
+    .screen {
+        height: 840px;
+        min-width: 1200px;
+    }
 }
 
 /*  ОТСТУПЫ */
 .container:first-child {
     padding-top: 150px;
+}
+
+@media (max-width: 1440px) {
+    .container {
+        width: 60%;
+    }
+    .container:first-child {
+        padding-top: 100px;
+    }
 }
 
 form > div.row {
