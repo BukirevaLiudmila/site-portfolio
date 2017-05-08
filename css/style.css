@@ -59,6 +59,10 @@ a:active {
     background-image: url('../images/triangles.png');
 }
 
+.bg-white {
+    background-color: #f3f3f3;
+}
+
 /*  ОФОРМЛЕНИЕ ТЕКСТА */
 .align-year {
     text-align: right;
@@ -172,6 +176,20 @@ div.icon > img {
     font-size: 17px;
     padding-left: 30px;
     padding-right: 30px;
+}
+
+.my-btn:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+button.my-btn.bg-white:hover {
+    background-color: #6368b4;
+    color: #f3f3f3;
+}
+
+button.my-btn.bg-lilac:hover {
+    background-color: #f3f3f3;
+    color: #6c71c4;
 }
 
 /*  РАЗМЕР ЭКРАНА */
