@@ -176,7 +176,7 @@ div.icon > img {
 
 /*  РАЗМЕР ЭКРАНА */
 .screen {
-    height: 1000px;
+    height: 950px;
     min-width: 1200px;
     overflow: auto;
 }

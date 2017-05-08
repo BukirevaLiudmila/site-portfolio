@@ -17,14 +17,23 @@ function showVisible() {
             bar.setAttribute('data-showed', 'true');
         }
     }
-
 }
 
 window.onscroll = showVisible;
 showVisible();
+
 var edgeOffset = 0; // px
 zenscroll.setup(null, edgeOffset);
+
 function scroll(e) {
+    var imgs = document.querySelectorAll('.circle > img');
+    imgs.forEach((el) => {
+        var attr = el.getAttribute('src');
+        if (attr == './images/circle-active.png') {
+            el.setAttribute('src', './images/circle.png')
+        }
+    });
+    e.target.setAttribute('src', './images/circle-active.png');
     var to = e.target.getAttribute('data-scroll-to');
     var screen = document.getElementById(to);
     zenscroll.to(screen);
