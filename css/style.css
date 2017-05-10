@@ -38,6 +38,12 @@ a:active {
     background-size: cover;
 }
 
+@media (max-width: 1440px) {
+    .bg-echeveria {
+        background-image: url('../images/echeveria-sm.png');
+    }
+}
+
 .bg-green {
     background-color: #71b783;
 }
@@ -57,6 +63,12 @@ a:active {
 .bg-triangles {
     background-color: #586e75;
     background-image: url('../images/triangles.png');
+}
+
+@media (max-width: 1440px) {
+    .bg-triangles {
+        background-image: url('../images/triangles-sm.png');
+    }
 }
 
 .bg-white {
@@ -270,7 +282,7 @@ form > div.row {
 
 /*  ZOOM  */
 .zoom:hover {
-    zoom: 1.05;
+    zoom: 1.02;
 }
 
 .progress-bar {
