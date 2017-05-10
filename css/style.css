@@ -166,8 +166,6 @@ a:active {
 
 @media (max-width: 1440px) {
     .icons {
-        max-width: 250px;
-        min-width: 250px;
         padding-top: 100px;
     }
 }
