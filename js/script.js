@@ -17,6 +17,31 @@ function showVisible() {
             bar.setAttribute('data-showed', 'true');
         }
     }
+    var screens = document.querySelectorAll('.screen');
+    var coordsMiddle = [];
+    screens.forEach(function (elem) {
+        var coords = elem.getBoundingClientRect();
+        var middleScreen = (coords.top + coords.bottom) / 2 - document.documentElement.clientHeight / 2;
+        coordsMiddle.push({
+            coords: middleScreen,
+            elem: elem.getAttribute('id')
+        });
+    });
+    var activeScreen = coordsMiddle[0];
+    coordsMiddle.forEach(function (elem) {
+        if (Math.abs(elem.coords) < Math.abs(activeScreen.coords)) {
+            activeScreen = elem;
+        }
+    });
+    var imgs = document.querySelectorAll('.circle > img');
+    imgs.forEach((el) => {
+        var attr = el.getAttribute('data-scroll-to');
+        if (attr == activeScreen.elem) {
+            el.setAttribute('src', './images/circle-active.png');
+        } else {
+            el.setAttribute('src', './images/circle.png');
+        }
+    });
 }
 
 window.onscroll = showVisible;
@@ -27,13 +52,6 @@ zenscroll.setup(null, edgeOffset);
 
 function scroll(e) {
     var imgs = document.querySelectorAll('.circle > img');
-    imgs.forEach((el) => {
-        var attr = el.getAttribute('src');
-        if (attr == './images/circle-active.png') {
-            el.setAttribute('src', './images/circle.png')
-        }
-    });
-    e.target.setAttribute('src', './images/circle-active.png');
     var to = e.target.getAttribute('data-scroll-to');
     var screen = document.getElementById(to);
     zenscroll.to(screen);
@@ -42,3 +60,5 @@ function scroll(e) {
 document.querySelectorAll('.circle').forEach(function (el) {
     el.addEventListener('click', scroll);
 });
+
+slidr.create('slidr-id').start();

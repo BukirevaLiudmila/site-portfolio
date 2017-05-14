@@ -304,3 +304,11 @@ form > div.row {
 .circle > img {
     cursor: pointer;
 }
+
+.slider-frame {
+    padding: 40px;
+}
+
+aside[id="slidr-id-control"] .slidr-control.down, aside[id="slidr-id-control"] .slidr-control.up {
+    display: none;
+}
