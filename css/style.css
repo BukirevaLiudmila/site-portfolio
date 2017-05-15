@@ -1,3 +1,4 @@
+/*-------------------- ОБЩИЕ СТИЛИ --------------------*/
 * {
     font-family: 'Roboto Mono', monospace;
     font-size: 22px;
@@ -8,27 +9,54 @@ span {
     font-size: 18px;
 }
 
-/*  ОФОРМЛЕНИЕ ССЫЛОК */
-a:link {
-    font-size: 18px;
-    color: #586e75;
-    text-decoration: none;
+/*  РАЗМЕР ЭКРАНА */
+.screen {
+    height: 950px;
+    min-width: 1200px;
+    overflow: auto;
+}
+@media (max-width: 1440px) {
+    .screen {
+        height: 840px;
+        min-width: 1200px;
+    }
 }
 
-a:hover {
-    color: #6c71c4;
+/* ПЕРЕКЛЮЧАТЕЛИ ЭКРАНОВ */
+.circle {
+    padding: 0px 0px 20px 0px;
 }
 
-a:active {
-    font-weight: bold;
-}
-
-.portfolio-element {
-    padding: 0 3vw;
-}
-
-.portfolio-element > div {
+.circle > img {
     cursor: pointer;
+}
+
+.scroll-circles {
+    position: fixed;
+    right: 20px;
+    top: 40%;
+    z-index: 1;
+}
+
+/* ОТСТУПЫ */
+form > div.row {
+    padding-bottom: 8px;
+}
+
+.padding-left-sm {
+    padding: 0px 0px 0px 5px;
+}
+
+.padding-right-sm {
+    padding: 0px 5px 0px 0px;
+}
+
+.padding-top-lg {
+    padding-top: 200px;
+}
+
+.padding-top-sm {
+    padding-top: 50px;
 }
 
 /*  ОФОРМЛЕНИЕ ФОНА */
@@ -92,92 +120,6 @@ a:active {
     color: #fdf6e3;
 }
 
-.education {
-    font-size: 20px;
-    font-weight: 300;
-    padding-top: 200px;
-}
-
-.portfolio-text {
-    font-size: 19px;
-    font-weight: 300;
-    text-align: center;
-    padding-top: 5px;
-}
-
-.progress-font {
-    font-size: 19px;
-    font-weight: 300;
-}
-
-/*  ОФОРМЛЕНИЕ ФОРМЫ ДЛЯ СВЯЗИ */
-.form-element {
-    border: none;
-    border-radius: 5px;
-    background-color: #586e75;
-    font-family: 'Roboto Mono', monospace;
-    font-weight: 300;
-    font-size: 16px;
-    opacity: 0.4;
-    padding: 8px 0px 8px 10px;
-    width: inherit;
-}
-
-/*  ОФОРМЛЕНИЕ ТЕКСТА ПРИВЕТСТВИЯ */
-.greeting {
-    color: #f3f3f3;
-    font-size: 22px;
-    padding-top: 150px;
-    padding-bottom: 100px;
-    text-align: center;
-}
-
-@media (max-width: 1440px) {
-    .greeting {
-        padding-top: 100px;
-        padding-bottom: 70px;
-    }
-}
-
-/* ШИРИНА БЛОКОВ КОНТАКТЫ */
-.contact-key {
-    min-width: 166px;
-}
-
-.contact-value {
-    min-width: 248px;
-    padding-left: 0px;
-}
-
-.contact {
-    min-width: 500px;
-}
-
-.copyright {
-    font-size: 12px;
-    padding-top: 10px;
-}
-
-.icons {
-    max-width: 250px;
-    min-width: 250px;
-    padding-top: 200px;
-}
-
-@media (max-width: 1440px) {
-    .icons {
-        padding-top: 100px;
-    }
-}
-
-.icon {
-    padding: 50px 0px 0px;
-}
-
-div.icon > img {
-    cursor: pointer;
-}
-
 /*  ОФОРМЛЕНИЕ КНОПОК */
 .my-btn {
     border: none;
@@ -187,7 +129,6 @@ div.icon > img {
     padding-left: 30px;
     padding-right: 30px;
 }
-
 
 .my-btn:hover {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
@@ -203,19 +144,44 @@ button.my-btn.bg-lilac:hover {
     color: #6c71c4;
 }
 
-/*  РАЗМЕР ЭКРАНА */
-.screen {
-    height: 950px;
-    min-width: 1200px;
-    overflow: auto;
+/*  ОФОРМЛЕНИЕ ССЫЛОК */
+a:link {
+    font-size: 18px;
+    color: #586e75;
+    text-decoration: none;
 }
+
+a:hover {
+    color: #6c71c4;
+}
+
+a:active {
+    font-weight: bold;
+}
+
+/*  ZOOM  */
+.zoom:hover {
+    zoom: 1.02;
+}
+
+/*-------------------- ПРИВЕТСТВИЕ --------------------*/
+/*  ОФОРМЛЕНИЕ ТЕКСТА */
+.greeting {
+    color: #f3f3f3;
+    font-size: 22px;
+    padding-top: 150px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
 @media (max-width: 1440px) {
-    .screen {
-        height: 840px;
-        min-width: 1200px;
+    .greeting {
+        padding-top: 100px;
+        padding-bottom: 70px;
     }
 }
 
+/*-------------------- НАВЫКИ --------------------*/
 /*  ОТСТУПЫ */
 .container:first-child {
     padding-top: 150px;
@@ -230,27 +196,69 @@ button.my-btn.bg-lilac:hover {
     }
 }
 
-form > div.row {
-    padding-bottom: 8px;
+/* ПОЛОСЫ НАВЫКОВ */
+.progress-bar {
+    -webkit-transition-duration: 2s;
+    -o-transition-duration: 2s;
+    -moz-transition-duration: 2s;
+    transition-duration: 2s;
 }
 
-.padding-left-sm {
-    padding: 0px 0px 0px 5px;
+.progress-font {
+    font-size: 19px;
+    font-weight: 300;
 }
 
-.padding-right-sm {
-    padding: 0px 5px 0px 0px;
-}
-
-.padding-top-lg {
+/*-------------------- ОБРАЗОВАНИЕ --------------------*/
+/* ОФОРМЛЕНИЕ ТЕКСТА */
+.education {
+    font-size: 20px;
+    font-weight: 300;
     padding-top: 200px;
 }
 
-.padding-top-sm {
-    padding-top: 50px;
+/*-------------------- ПОРТФОЛИО --------------------*/
+/* ОФОРМЛЕНИЕ РАБОТ */
+.portfolio-element {
+    padding: 0 3vw;
 }
 
-/*  ОФОРМЛЕНИЕ ТЕКСТОВОГО ПОЛЯ */
+.portfolio-element > div {
+    cursor: pointer;
+}
+/* ОФОРМЛЕНИЕ ТЕКСТА */
+.portfolio-text {
+    font-size: 19px;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 5px;
+}
+
+/*-------------------- ПОЧЕМУ Я? --------------------*/
+/*  СЛАЙДЕР  */
+.slider-frame {
+    padding: 40px;
+}
+
+aside[id="slidr-id-control"] .slidr-control.down, aside[id="slidr-id-control"] .slidr-control.up {
+    display: none;
+}
+
+/*-------------------- КОНТАКТЫ --------------------*/
+/*  ОФОРМЛЕНИЕ ФОРМЫ ДЛЯ СВЯЗИ */
+.form-element {
+    border: none;
+    border-radius: 5px;
+    background-color: #586e75;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+    font-size: 16px;
+    opacity: 0.4;
+    padding: 8px 0px 8px 10px;
+    width: inherit;
+}
+
+/* ОФОРМЛЕНИЕ ТЕКСТОВОГО ПОЛЯ */
 .textarea {
     min-width: 500px;
     outline: none;
@@ -278,37 +286,42 @@ form > div.row {
     color: #fdf6e3;
 }
 
-/*  ZOOM  */
-.zoom:hover {
-    zoom: 1.02;
+/* РАСПОЛОЖЕНИЕ КОНТАКТНОЙ ИНФОРМАЦИИ */
+.contact-key {
+    min-width: 166px;
 }
 
-.progress-bar {
-    -webkit-transition-duration: 2s;
-    -o-transition-duration: 2s;
-    -moz-transition-duration: 2s;
-    transition-duration: 2s;
+.contact-value {
+    min-width: 248px;
+    padding-left: 0px;
 }
 
-.scroll-circles {
-    position: fixed;
-    right: 20px;
-    top: 40%;
-    z-index: 1;
+.contact {
+    min-width: 500px;
 }
 
-.circle {
-    padding: 0px 0px 20px 0px;
+/*  РАСПОЛОЖЕНИЕ ИКОНОК СОЦ СЕТЕЙ */
+.icons {
+    max-width: 250px;
+    min-width: 250px;
+    padding-top: 200px;
 }
 
-.circle > img {
+@media (max-width: 1440px) {
+    .icons {
+        padding-top: 100px;
+    }
+}
+
+.icon {
+    padding: 50px 0px 0px;
+}
+
+div.icon > img {
     cursor: pointer;
 }
-/*  СЛАЙДЕР  */
-.slider-frame {
-    padding: 40px;
-}
-
-aside[id="slidr-id-control"] .slidr-control.down, aside[id="slidr-id-control"] .slidr-control.up {
-    display: none;
+/*  COPYRIGHT */
+.copyright {
+    font-size: 12px;
+    padding-top: 10px;
 }
