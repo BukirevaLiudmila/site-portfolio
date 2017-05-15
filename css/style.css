@@ -11,6 +11,7 @@ span {
 
 /*  РАЗМЕР ЭКРАНА */
 .screen {
+    cursor: default;
     height: 950px;
     min-width: 1200px;
     overflow: auto;
@@ -220,13 +221,15 @@ a:active {
 /*-------------------- ПОРТФОЛИО --------------------*/
 /* ОФОРМЛЕНИЕ РАБОТ */
 .portfolio-element {
+    cursor: pointer;
     padding: 0 3vw;
 }
 
-.portfolio-element > div {
-    cursor: pointer;
+.portfolio-element:hover div {
+    font-weight: 400;
 }
-/* ОФОРМЛЕНИЕ ТЕКСТА */
+
+    /* ОФОРМЛЕНИЕ ТЕКСТА */
 .portfolio-text {
     font-size: 19px;
     font-weight: 300;
@@ -236,7 +239,12 @@ a:active {
 
 /*-------------------- ПОЧЕМУ Я? --------------------*/
 /*  СЛАЙДЕР  */
+#slidr-id {
+    outline: 8px dashed #fdf6e3;
+}
+
 .slider-frame {
+    outline: 8px dashed white;
     padding: 40px;
 }
 

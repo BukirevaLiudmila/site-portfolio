@@ -2,38 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/bootstrap-grid.min.css" rel="stylesheet">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/bootstrap-grid.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500&amp;subset=cyrillic" rel="stylesheet">
-    <link href="/css/style.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
     <title>Bukireva</title>
 </head>
 <body>
 <!--------------------------МЕНЮ-------------------------->
 <div class="scroll-circles">
     <div class="circle">
-        <img src="/images/circle.png" data-scroll-to="screen-greeting" class="row">
+        <img src="./images/circle.png" data-scroll-to="screen-greeting" class="row">
     </div>
     <div class="circle">
-        <img src="/images/circle.png" data-scroll-to="screen-skills" class="row">
+        <img src="./images/circle.png" data-scroll-to="screen-skills" class="row">
     </div>
     <div class="circle">
-        <img src="/images/circle.png" data-scroll-to="screen-education" class="row">
+        <img src="./images/circle.png" data-scroll-to="screen-education" class="row">
     </div>
     <div class="circle">
-        <img src="/images/circle.png" data-scroll-to="screen-portfolio" class="row">
+        <img src="./images/circle.png" data-scroll-to="screen-portfolio" class="row">
     </div>
     <div class="circle">
-        <img src="/images/circle.png" data-scroll-to="screen-why-i" class="row">
+        <img src="./images/circle.png" data-scroll-to="screen-why-i" class="row">
     </div>
     <div class="circle">
-        <img src="/images/circle.png" data-scroll-to="screen-contacts" class="row">
+        <img src="./images/circle.png" data-scroll-to="screen-contacts" class="row">
     </div>
 </div>
 <!-----------------------ПРИВЕТСТВИЕ----------------------->
 <div class="container-fluid screen bg-lilac" id="screen-greeting">
     <div class="row justify-content-center">
-        <div class="greeting">Привет! Меня зовут Букирёва Людмила.<br>Я - web-разработчик. Листай вниз и узнай обо мне
+        <div class="greeting">Привет! Меня зовут Букирёва Людмила.<br>Я - web-программист. Листай вниз и узнай обо мне
             больше.
         </div>
     </div>
@@ -59,7 +59,7 @@
     <div class="row justify-content-center">
         <div class="container">
             <div class="progress">
-                <div class="progress-bar bg-lilac" role="progressbar" style="width: 0%" aria-valuenow="80"
+                <div class="progress-bar bg-lilac" role="progressbar" style="width: 0%" aria-valuenow="85"
                      aria-valuemin="0" aria-valuemax="100" data-showed="false"></div>
             </div>
             <div class="progress-font color-gray">HTML</div>
@@ -90,7 +90,7 @@
 
             <div class="padding-top-sm">
                 <div class="progress">
-                    <div class="progress-bar bg-green" role="progressbar" style="width: 0%" aria-valuenow="65"
+                    <div class="progress-bar bg-green" role="progressbar" style="width: 0%" aria-valuenow="50"
                          aria-valuemin="0" aria-valuemax="100" data-showed="false"></div>
                 </div>
             </div>
@@ -98,7 +98,7 @@
 
             <div class="padding-top-sm">
                 <div class="progress">
-                    <div class="progress-bar bg-green" role="progressbar" style="width: 0%" aria-valuenow="55"
+                    <div class="progress-bar bg-green" role="progressbar" style="width: 0%" aria-valuenow="45"
                          aria-valuemin="0" aria-valuemax="100" data-showed="false"></div>
                 </div>
             </div>
@@ -129,21 +129,14 @@
         <div class="padding-top-sm">< Портфолио ></div>
     </div>
     <div class="row justify-content-center padding-top-lg">
-        <div class="portfolio-element">
-            <div>
-                <a href="http://bukirevala.wixsite.com/anomalisa" target="_blank">
-                    <img src="images/wix.png" alt="Wix" class="zoom">
-                    <div class="portfolio-text">Блог путешественника</div>
-                </a>
-            </div>
+
+        <div class="portfolio-element" onclick="window.open('http://bukirevala.wixsite.com/anomalisa')">
+            <img src="images/wix.png" alt="Wix" class="zoom">
+            <div class="portfolio-text">Блог путешественника</div>
         </div>
-        <div class="portfolio-element">
-            <div>
-                <a href="http://bukirevala.wixsite.com/anomalisa" target="_blank">
-                    <img src="images/site-portfolio.png" alt="Сайт-портфолио" class="zoom">
-                    <div class="portfolio-text">Сайт-портфолио</div>
-                </a>
-            </div>
+        <div class="portfolio-element" onclick="window.open('http://bukirevala.wixsite.com/anomalisa')">
+            <img src="images/site-portfolio.png" alt="Сайт-портфолио" class="zoom">
+            <div class="portfolio-text">Сайт-портфолио</div>
         </div>
     </div>
 </div>
@@ -235,8 +228,8 @@
         <div class="color-gray copyright">© Copyright 2017 Букирёва Людмила</div>
     </div>
 </div>
-<script src="/js/zenscroll-min.js"></script>
-<script src="/js/slidr.min.js"></script>
-<script src="/js/script.js"></script>
+<script src="./js/zenscroll-min.js"></script>
+<script src="./js/slidr.min.js"></script>
+<script src="./js/script.js"></script>
 </body>
 </html>
