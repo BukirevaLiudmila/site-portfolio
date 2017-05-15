@@ -160,11 +160,6 @@ a:active {
     font-weight: bold;
 }
 
-/*  ZOOM  */
-.zoom:hover {
-    zoom: 1.02;
-}
-
 /*-------------------- ПРИВЕТСТВИЕ --------------------*/
 /*  ОФОРМЛЕНИЕ ТЕКСТА */
 .greeting {
@@ -229,7 +224,21 @@ a:active {
     font-weight: 400;
 }
 
-    /* ОФОРМЛЕНИЕ ТЕКСТА */
+/* ИЗОБРАЖЕНИЯ-ССЫЛКИ РАБОТ */
+.portfolio-img {
+    border-radius: 12px;
+}
+
+.portfolio-img img {
+    height: 267px;
+    width: 267px;
+}
+
+.portfolio-img:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+/* ОФОРМЛЕНИЕ ТЕКСТА */
 .portfolio-text {
     font-size: 19px;
     font-weight: 300;
@@ -244,12 +253,19 @@ a:active {
 }
 
 .slider-frame {
-    outline: 8px dashed white;
-    padding: 40px;
+    padding: 60px;
 }
 
 aside[id="slidr-id-control"] .slidr-control.down, aside[id="slidr-id-control"] .slidr-control.up {
     display: none;
+}
+
+aside[id="slidr-id-control"] .slidr-control.left {
+    left: 20px !important;
+}
+
+aside[id="slidr-id-control"] .slidr-control.right {
+    right: 20px !important;
 }
 
 /*-------------------- КОНТАКТЫ --------------------*/
