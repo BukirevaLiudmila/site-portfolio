@@ -318,8 +318,16 @@ a:active {
 
 /*-------------------- ПОЧЕМУ Я? --------------------*/
 /*  СЛАЙДЕР  */
-#slidr-id {
+.slider {
     outline: 8px dashed #fdf6e3;
+    -webkit-transition: .7s ease-in-out;
+    -moz-transition: .7s ease-in-out;
+    -o-transition: .7s ease-in-out;
+    transition: .7s ease-in-out;
+ }
+
+.slider:hover {
+    outline-offset: 30px;
 }
 
 .slider-frame {
