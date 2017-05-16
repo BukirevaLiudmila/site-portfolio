@@ -39,7 +39,7 @@ span {
     z-index: 1;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1200px) {
     .scroll-circles {
         left: 35px;
     }
