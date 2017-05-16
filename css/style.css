@@ -290,27 +290,26 @@ a:active {
     cursor: pointer;
     padding: 0 3vw;
 }
+.portfolio-element:hover div:first-child{
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
 
-.portfolio-element:hover div {
+.portfolio-element:hover div:last-child {
     font-weight: 400;
 }
 
-/* ИЗОБРАЖЕНИЯ-ССЫЛКИ РАБОТ */
-.portfolio-img {
+/* ИЗОБРАЖЕНИЯ РАБОТ */
+.portfolio-element div:first-child {
     border-radius: 12px;
 }
 
-.portfolio-img img {
+.portfolio-element div img {
     height: 267px;
     width: 267px;
 }
 
-.portfolio-img:hover {
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-}
-
 /* ОФОРМЛЕНИЕ ТЕКСТА */
-.portfolio-text {
+.portfolio-element div:last-child {
     font-size: 19px;
     font-weight: 300;
     text-align: center;
