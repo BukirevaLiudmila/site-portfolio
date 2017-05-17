@@ -9,9 +9,9 @@ const nodemailer = require('nodemailer');
 const port = process.env.PORT || 80;
 
 let transporter = nodemailer.createTransport({
-    service: 'Gmail',
+    service: 'Yandex',
     auth: {
-        user: 'bukirevala@gmail.com',
+        user: 'bukireva.portfolio@yandex.ru',
         pass: 'Passw0rd18'
     }
 });
@@ -25,10 +25,10 @@ app.use(bodyParser.urlencoded({
 app.post('/send-mail', (req, res) => {
     console.log(req.body);
     let mailOptions = {
-        from: `${req.body.name} 👻 <${req.body.email}>`, // sender address
+        from: 'Site Portfolio 👻 <bukireva.portfolio@yandex.ru>', // sender address
         to: 'bukirevala@gmail.com', // list of receivers
         subject: 'Site-portfolio', // Subject line
-        text: req.body.message, // plain text body
+        text: `Name: ${req.body.name} \nEmail: ${req.body.email} \nMessage: ${req.body.message}`, // plain text body
     };
     transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
