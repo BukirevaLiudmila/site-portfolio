@@ -1,3 +1,38 @@
+function sendMail() {
+    var data = {
+        name: document.querySelector('input[name="name"]').value,
+        email: document.querySelector('input[name="email"]').value,
+        message: document.querySelector('textarea[name="message"]').value
+    };
+    if (data.name.length > 0 && data.email.length > 0 && data.message.length > 0) {
+        fetch('/send-mail', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+            .then(function (x) {
+                return x.json();
+            })
+            .then(function (x) {
+                var sucsessBlock = document.querySelector('.sucsess-text');
+                sucsessBlock.style.visibility = 'visible';
+                setTimeout(function () {
+                    sucsessBlock.style.visibility = 'hidden';
+                }, 3000);
+                return console.log(x);
+            });
+    } else {
+        var errorBlock = document.querySelector('.error-text');
+        errorBlock.style.visibility = 'visible';
+        setTimeout(function () {
+            errorBlock.style.visibility = 'hidden';
+        }, 3000);
+    }
+    return false;
+}
+
 function isVisible(elem) {
     var coords = elem.getBoundingClientRect();
     var windowHeight = document.documentElement.clientHeight;

@@ -1,0 +1,19 @@
+{
+  "name": "site-portfolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/BukirevaLiudmila/site-portfolio.git",
+  "author": "Liudmila <226585@niuitmo.ru>",
+  "license": "MIT",
+  "engines": {
+    "node": "6.10.2"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "nodemailer": "^4.0.1"
+  }
+}

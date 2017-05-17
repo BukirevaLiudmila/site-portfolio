@@ -318,6 +318,10 @@ a:active {
 
 /*-------------------- ПОЧЕМУ Я? --------------------*/
 /*  СЛАЙДЕР  */
+.slider-block {
+    padding-top: 120px;
+}
+
 .slider {
     outline: 8px dashed #fdf6e3;
     -webkit-transition: .7s ease-in-out;
@@ -367,6 +371,30 @@ aside[id="slidr-id-control"] .slidr-control.right {
     overflow: auto;
     resize: none;
     padding-top: 5px;
+}
+
+.error-text {
+    background: rgba(181, 51, 51, 0.3); /* Цвет фона */
+    border-radius: 5px;
+    color: darkred;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    font-size: 17px;
+    padding-top: 8px;
+    text-align: center;
+    visibility: hidden;
+}
+
+.sucsess-text {
+    background: rgba(113, 183, 131, 0.3); /* Цвет фона */
+    border-radius: 5px;
+    color: #128b4c;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    font-size: 17px;
+    padding-top: 8px;
+    text-align: center;
+    visibility: hidden;
 }
 
 /*  ЦВЕТ ТЕКСТА В PLACEHOLDER  */

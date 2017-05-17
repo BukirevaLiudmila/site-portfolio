@@ -2,32 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link href="./css/bootstrap.min.css" rel="stylesheet">
-    <link href="./css/bootstrap-grid.min.css" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap-grid.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500&amp;subset=cyrillic" rel="stylesheet">
-    <link href="./css/style.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
     <title>Liudmila Bukireva</title>
 </head>
 <body>
 <!--------------------------МЕНЮ-------------------------->
 <div class="scroll-circles">
     <div class="circle">
-        <img src="./images/circle.png" data-scroll-to="screen-greeting" class="row">
+        <img src="/images/circle.png" data-scroll-to="screen-greeting" class="row">
     </div>
     <div class="circle">
-        <img src="./images/circle.png" data-scroll-to="screen-skills" class="row">
+        <img src="/images/circle.png" data-scroll-to="screen-skills" class="row">
     </div>
     <div class="circle">
-        <img src="./images/circle.png" data-scroll-to="screen-education" class="row">
+        <img src="/images/circle.png" data-scroll-to="screen-education" class="row">
     </div>
     <div class="circle">
-        <img src="./images/circle.png" data-scroll-to="screen-portfolio" class="row">
+        <img src="/images/circle.png" data-scroll-to="screen-portfolio" class="row">
     </div>
     <div class="circle">
-        <img src="./images/circle.png" data-scroll-to="screen-why-i" class="row">
+        <img src="/images/circle.png" data-scroll-to="screen-why-i" class="row">
     </div>
     <div class="circle">
-        <img src="./images/circle.png" data-scroll-to="screen-contacts" class="row">
+        <img src="/images/circle.png" data-scroll-to="screen-contacts" class="row">
     </div>
 </div>
 <!-----------------------ПРИВЕТСТВИЕ----------------------->
@@ -38,16 +38,14 @@
         </div>
     </div>
     <div class="row justify-content-center">
-        <img src="images/myPhoto.png" alt="Это я">
+        <img src="/images/myPhoto.png" alt="Это я">
     </div>
     <div class="row justify-content-center">
-        <div class="hvr-hang"><img src="images/arrow.png" alt="стрелка" class="padding-top-sm"></div>
+        <div class="hvr-hang"><img src="/images/arrow.png" alt="стрелка" class="padding-top-sm"></div>
     </div>
     <div class="row justify-content-center">
         <div class="padding-top-sm">
-            <a href="https://drive.google.com/open?id=0B64W_sTmWrgEaWFId3BNTzg5ZGM" target="_blank">
-                <button type="button" class="btn btn-secondary color-lilac my-btn bg-white cursor-pointer">Резюме</button>
-            </a>
+            <button type="button" class="btn btn-secondary color-lilac my-btn bg-white cursor-pointer" onclick="window.open('https://drive.google.com/open?id=0B64W_sTmWrgEaWFId3BNTzg5ZGM')">Резюме</button>
         </div>
     </div>
 </div>
@@ -130,11 +128,11 @@
     </div>
     <div class="row justify-content-center padding-top-lg">
         <div class="portfolio-element" onclick="window.open('http://bukirevala.wixsite.com/anomalisa')">
-            <div><img src="images/wix.png" alt="Wix"></div>
+            <div><img src="/images/wix.png" alt="Wix"></div>
             <div>Блог путешественника</div>
         </div>
         <div class="portfolio-element" onclick="window.open('http://bukirevala.wixsite.com/anomalisa')">
-            <div><img src="images/site-portfolio.png" alt="Сайт-портфолио"></div>
+            <div><img src="/images/site-portfolio.png" alt="Сайт-портфолио"></div>
             <div>Сайт-портфолио</div>
         </div>
     </div>
@@ -144,14 +142,14 @@
     <div class="row justify-content-center">
         <div class="padding-top-sm">< Почему я? ></div>
     </div>
-    <div class="row justify-content-center padding-top-lg">
+    <div class="row justify-content-center slider-block">
         <div class="slider">
         <div id="slidr-id">
             <div class="slider-frame" data-slidr="one">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/_P0B3lcMPAk" frameborder="0" allowfullscreen></iframe>
+                <iframe width="800" height="480" src="https://www.youtube.com/embed/_P0B3lcMPAk" frameborder="0" allowfullscreen></iframe>
             </div>
             <div class="slider-frame" data-slidr="two">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/ZqUQLm1jSsU" frameborder="0" allowfullscreen></iframe>
+                <iframe width="800" height="480" src="https://www.youtube.com/embed/ZqUQLm1jSsU" frameborder="0" allowfullscreen></iframe>
             </div>
         </div>
         </div>
@@ -166,7 +164,7 @@
         <div class="row col-sm-8 flex-nowrap">
             <!-- Форма для связи -->
             <div class="col-sm-5 row contact">
-                <form name="contact">
+                <form name="contact" onsubmit="return sendMail();">
                     <div class="row flex-nowrap">
                         <div class="col-sm-6 padding-right-sm">
                             <input type="text" name="name" placeholder="Имя" maxlength="25" class="form-element color-pearl">
@@ -176,13 +174,12 @@
                         </div>
                     </div>
                     <div class="row">
-                    <textarea name="message" rows="8" maxlength="300" placeholder="Сообщение"
-                              class="col-sm-12 form-element color-pearl textarea"></textarea>
+                        <textarea name="message" rows="8" maxlength="300" placeholder="Сообщение" class="col-sm-12 form-element color-pearl textarea"></textarea>
                     </div>
-                    <div class="row">
-                        <button type="submit" class="btn btn-secondary color-pearl my-btn bg-lilac cursor-pointer">
-                            Отправить
-                        </button>
+                    <div class="row ">
+                        <div class="col-sm-4 padding-right-sm"><button type="submit" class="btn btn-secondary color-pearl my-btn bg-lilac cursor-pointer">Отправить</button></div>
+                        <div class="col-sm-8 error-text">Заполнены не все поля!</div>
+                        <div class="col-sm-8 sucsess-text">Сообщение успешно отправлено</div>
                     </div>
                 </form>
             </div>
@@ -190,15 +187,15 @@
             <div itemscope itemtype="http://schema.org/Person" class="col-sm-6 offset-sm-1 row flex-nowrap">
                 <div class="col-sm-3 contact-key">
                     <div class="padding-bottom-xsm">
-                        <span><img src="images/phone.png"></span>
+                        <span><img src="/images/phone.png"></span>
                         <span>Телефон:</span>
                     </div>
                     <div class="padding-bottom-xsm">
-                        <span><img src="images/email.png"></span>
+                        <span><img src="/images/email.png"></span>
                         <span>E-mail:</span>
                     </div>
                     <div>
-                        <span><img src="images/location.png"></span>
+                        <span><img src="/images/location.png"></span>
                         <span>Город:</span>
                     </div>
                 </div>
@@ -219,9 +216,9 @@
     <!-- Соц сети -->
     <div class="row">
         <div class="col-sm-2 offset-sm-2 row icons flex-nowrap">
-            <div class="col-sm-4 icon"><a href="https://vk.com/id18203356" target="_blank"><img src="images/vk.png" alt="ВКонтакте"></a></div>
-            <div class="col-sm-4 icon"><a href="https://github.com/BukirevaLiudmila" target="_blank"><img src="images/github.png" alt="GitHub"></a></div>
-            <div class="col-sm-4 icon">	<a href="skype:lysiena-mila?chat"><img src="images/skype.png" alt="Skype"></a></div>
+            <div class="col-sm-4 icon"><a href="https://vk.com/id18203356" target="_blank"><img src="/images/vk.png" alt="ВКонтакте"></a></div>
+            <div class="col-sm-4 icon"><a href="https://github.com/BukirevaLiudmila" target="_blank"><img src="/images/github.png" alt="GitHub"></a></div>
+            <div class="col-sm-4 icon">	<a href="skype:lysiena-mila?chat"><img src="/images/skype.png" alt="Skype"></a></div>
         </div>
         <div class="col-sm-8"></div>
     </div>
@@ -229,8 +226,8 @@
         <div class="color-gray copyright">© Copyright 2017 Букирёва Людмила</div>
     </div>
 </div>
-<script src="./js/zenscroll-min.js"></script>
-<script src="./js/slidr.min.js"></script>
-<script src="./js/script.js"></script>
+<script src="/js/zenscroll-min.js"></script>
+<script src="/js/slidr.min.js"></script>
+<script src="/js/script.js"></script>
 </body>
 </html>
