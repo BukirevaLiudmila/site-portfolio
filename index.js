@@ -6,6 +6,7 @@ const app = express();
 const path = require('path');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
+const port = process.env.PORT || 80;
 
 let transporter = nodemailer.createTransport({
     service: 'Gmail',
@@ -37,11 +38,7 @@ app.post('/send-mail', (req, res) => {
     });
     res.send(JSON.stringify({result: 'success'}));
 });
-/*
- app.get('/', function (req, res) {
- res.send()
- });*/
 
-app.listen('3030', () => {
-    console.log('Server start on port 3030');
+app.listen(port, () => {
+    console.log(`Server start on port ${port}`);
 });
