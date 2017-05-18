@@ -23,20 +23,36 @@ app.use(bodyParser.urlencoded({
 }));
 
 app.post('/send-mail', (req, res) => {
+    const {name, email, message} = req.body;
+    let result = {
+        textResult: 'Сообщение успешно отправлено',
+        classResult: 'sucsess-text'
+    };
     console.log(req.body);
     let mailOptions = {
         from: 'Site Portfolio 👻 <bukireva.portfolio@yandex.ru>', // sender address
         to: 'bukirevala@gmail.com', // list of receivers
         subject: 'Site-portfolio', // Subject line
-        text: `Name: ${req.body.name} \nEmail: ${req.body.email} \nMessage: ${req.body.message}`, // plain text body
+        text: `Name: ${name} \nEmail: ${email} \nMessage: ${message}`, // plain text body
     };
-    transporter.sendMail(mailOptions, (error, info) => {
-        if (error) {
-            return console.log(error);
-        }
-        console.log('Message %s sent: %s', info.messageId, info.response);
-    });
-    res.send(JSON.stringify({result: 'success'}));
+    if (name && name.length > 0 && email && email.length > 0 && message && message.length > 0) {
+        transporter.sendMail(mailOptions, (error, info) => {
+            if (error) {
+                result.textResult = 'Ошибка отправки';
+                result.classResult = 'error-text';
+                console.log('error status');
+                console.error(error);
+            } else {
+                console.log('Message %s sent: %s', info.messageId, info.response);
+            }
+            res.send(JSON.stringify(result));
+        });
+    } else {
+        console.error('not valid data');
+        result.textResult = 'Заполнены не все поля';
+        result.classResult = 'error-text';
+        res.send(JSON.stringify(result));
+    }
 });
 
 app.listen(port, () => {

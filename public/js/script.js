@@ -1,43 +1,40 @@
+function showResult(classResult, textResult) {
+    var reactionOnSending = document.querySelector('#reactionOnSending');
+    reactionOnSending.classList.add(classResult);
+    reactionOnSending.appendChild(document.createTextNode(textResult));
+    reactionOnSending.style.visibility = 'visible';
+    setTimeout(function () {
+        reactionOnSending.style.visibility = 'hidden';
+        reactionOnSending.classList.remove(classResult);
+        reactionOnSending.removeChild(reactionOnSending.firstChild);
+    }, 3000);
+}
+
 function sendMail() {
     var data = {
         name: document.querySelector('input[name="name"]').value,
         email: document.querySelector('input[name="email"]').value,
         message: document.querySelector('textarea[name="message"]').value
     };
-    if (data.name.length > 0 && data.email.length > 0 && data.message.length > 0) {
-        fetch('/send-mail', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(data)
+    fetch('/send-mail', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    })
+        .then(function (x) {
+            return x.json();
         })
-            .then(function (x) {
-                return x.json();
-            })
-            .then(function (x) {
-               var reactionOnSending = document.getElementById('reactionOnSending');
-               reactionOnSending.classList.add('sucsess-text');
-               reactionOnSending.appendChild(document.createTextNode('Сообщение успешно отправлено'));
-               reactionOnSending.style.visibility = 'visible';
-               setTimeout(function () {
-                   reactionOnSending.style.visibility = 'hidden';
-                   reactionOnSending.classList.remove('sucsess-text');
-                   reactionOnSending.removeChild(reactionOnSending.firstChild);
-               }, 3000);
-               return console.log(x);
-            });
-    } else {
-        var reactionOnSending = document.querySelector('reactionOnSending');
-        reactionOnSending.classList.add('error-text');
-        reactionOnSending.appendChild(document.createTextNode('Заполнены не все поля'));
-        reactionOnSending.style.visibility = 'visible';
-        setTimeout(function () {
-            reactionOnSending.style.visibility = 'hidden';
-            reactionOnSending.classList.remove('error-text');
-            reactionOnSending.removeChild(reactionOnSending.firstChild);
-        }, 3000);
-    }
+        .then(function (x) {
+            if (x.classResult == 'sucsess-text') {
+                document.querySelector('input[name="name"]').value = '';
+                document.querySelector('input[name="email"]').value = '';
+                document.querySelector('textarea[name="message"]').value = '';
+            }
+            showResult(x.classResult, x.textResult);
+            console.log(x);
+        });
     return false;
 }
 
@@ -110,6 +107,6 @@ document.querySelectorAll('.circle').forEach(function (el) {
 
 /* стрелка на первом экране */
 var arrow = document.querySelector('.hvr-hang');
-arrow.addEventListener('click',  scroll);
+arrow.addEventListener('click', scroll);
 
 slidr.create('slidr-id').start();
