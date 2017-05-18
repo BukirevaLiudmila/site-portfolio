@@ -7,6 +7,7 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 const port = process.env.PORT || 80;
+const favicon = require('serve-favicon');
 
 let transporter = nodemailer.createTransport({
     service: 'Yandex',
@@ -16,6 +17,7 @@ let transporter = nodemailer.createTransport({
     }
 });
 
+app.use(favicon(path.join__dirname + '/public/favicon.ico'));
 app.use(express.static(path.join(__dirname + '/public')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
