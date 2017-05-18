@@ -168,7 +168,7 @@ a:active {
 
 /*-------------------- ПРИВЕТСТВИЕ --------------------*/
 .arrow {
-    padding: 20px;
+    padding-top: 20px;
 }
 
 @media (max-width: 1440px) {
