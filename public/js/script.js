@@ -16,18 +16,26 @@ function sendMail() {
                 return x.json();
             })
             .then(function (x) {
-                var sucsessBlock = document.querySelector('.sucsess-text');
-                sucsessBlock.style.visibility = 'visible';
-                setTimeout(function () {
-                    sucsessBlock.style.visibility = 'hidden';
-                }, 3000);
-                return console.log(x);
+               var reactionOnSending = document.getElementById('reactionOnSending');
+               reactionOnSending.classList.add('sucsess-text');
+               reactionOnSending.appendChild(document.createTextNode('Сообщение успешно отправлено'));
+               reactionOnSending.style.visibility = 'visible';
+               setTimeout(function () {
+                   reactionOnSending.style.visibility = 'hidden';
+                   reactionOnSending.classList.remove('sucsess-text');
+                   reactionOnSending.removeChild(reactionOnSending.firstChild);
+               }, 3000);
+               return console.log(x);
             });
     } else {
-        var errorBlock = document.querySelector('.error-text');
-        errorBlock.style.visibility = 'visible';
+        var reactionOnSending = document.querySelector('reactionOnSending');
+        reactionOnSending.classList.add('error-text');
+        reactionOnSending.appendChild(document.createTextNode('Заполнены не все поля'));
+        reactionOnSending.style.visibility = 'visible';
         setTimeout(function () {
-            errorBlock.style.visibility = 'hidden';
+            reactionOnSending.style.visibility = 'hidden';
+            reactionOnSending.classList.remove('error-text');
+            reactionOnSending.removeChild(reactionOnSending.firstChild);
         }, 3000);
     }
     return false;
@@ -85,15 +93,23 @@ showVisible();
 var edgeOffset = 0; // px
 zenscroll.setup(null, edgeOffset);
 
+/* переключение экранов (меню-кружочки) */
 function scroll(e) {
-    var imgs = document.querySelectorAll('.circle > img');
     var to = e.target.getAttribute('data-scroll-to');
-    var screen = document.getElementById(to);
+    if (to == null) {      // если нажали на стрелку на первом экране
+        var screen = document.getElementById('screen-skills');
+    } else {
+        var screen = document.getElementById(to);
+    }
     zenscroll.to(screen);
 }
 
 document.querySelectorAll('.circle').forEach(function (el) {
     el.addEventListener('click', scroll);
 });
+
+/* стрелка на первом экране */
+var arrow = document.querySelector('.hvr-hang');
+arrow.addEventListener('click',  scroll);
 
 slidr.create('slidr-id').start();

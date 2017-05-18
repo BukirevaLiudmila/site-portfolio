@@ -41,11 +41,15 @@
         <img src="/images/myPhoto.png" alt="Это я">
     </div>
     <div class="row justify-content-center">
-        <div class="hvr-hang"><img src="/images/arrow.png" alt="стрелка" class="padding-top-sm"></div>
-    </div>
-    <div class="row justify-content-center">
         <div class="padding-top-sm">
             <button type="button" class="btn btn-secondary color-lilac my-btn bg-white cursor-pointer" onclick="window.open('https://drive.google.com/open?id=0B64W_sTmWrgEaWFId3BNTzg5ZGM')">Резюме</button>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="padding-top-lg">
+            <div class="arrow">
+                <div class="hvr-hang"><img src="/images/arrow.png" alt="стрелка"></div>
+            </div>
         </div>
     </div>
 </div>
@@ -131,7 +135,7 @@
             <div><img src="/images/wix.png" alt="Wix"></div>
             <div>Блог путешественника</div>
         </div>
-        <div class="portfolio-element" onclick="window.open('http://bukirevala.wixsite.com/anomalisa')">
+        <div class="portfolio-element" onclick="window.open('http://www.bukireva.ru')">
             <div><img src="/images/site-portfolio.png" alt="Сайт-портфолио"></div>
             <div>Сайт-портфолио</div>
         </div>
@@ -142,14 +146,14 @@
     <div class="row justify-content-center">
         <div class="padding-top-sm">< Почему я? ></div>
     </div>
-    <div class="row justify-content-center slider-block">
+    <div class="row justify-content-center padding-top-lg">
         <div class="slider">
         <div id="slidr-id">
             <div class="slider-frame" data-slidr="one">
-                <iframe width="800" height="480" src="https://www.youtube.com/embed/_P0B3lcMPAk" frameborder="0" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/_P0B3lcMPAk" frameborder="0" allowfullscreen></iframe>
             </div>
             <div class="slider-frame" data-slidr="two">
-                <iframe width="800" height="480" src="https://www.youtube.com/embed/ZqUQLm1jSsU" frameborder="0" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ZqUQLm1jSsU" frameborder="0" allowfullscreen></iframe>
             </div>
         </div>
         </div>
@@ -177,9 +181,10 @@
                         <textarea name="message" rows="8" maxlength="300" placeholder="Сообщение" class="col-sm-12 form-element color-pearl textarea"></textarea>
                     </div>
                     <div class="row ">
-                        <div class="col-sm-4 padding-right-sm"><button type="submit" class="btn btn-secondary color-pearl my-btn bg-lilac cursor-pointer">Отправить</button></div>
-                        <div class="col-sm-8 error-text">Заполнены не все поля!</div>
-                        <div class="col-sm-8 sucsess-text">Сообщение успешно отправлено</div>
+                        <div class="col-sm-4 padding-right-sm">
+                            <button type="submit" class="btn btn-secondary color-pearl my-btn bg-lilac cursor-pointer">Отправить</button>
+                        </div>
+                        <div class="col-sm-8" id="reactionOnSending"></div> <!-- блок для реакции на отправку сообщения-->
                     </div>
                 </form>
             </div>

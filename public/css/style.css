@@ -88,7 +88,7 @@ form > div.row {
 }
 
 .bg-mint {
-    background-color: #c0dcc0;
+    background-color: #c9dcce;
 }
 
 .bg-silver {
@@ -167,6 +167,16 @@ a:active {
 }
 
 /*-------------------- ПРИВЕТСТВИЕ --------------------*/
+.arrow {
+    padding-top: 20px;
+}
+
+@media (max-width: 1440px) {
+    .arrow {
+        padding-top: 10px;
+    }
+}
+
 /*  ОФОРМЛЕНИЕ ТЕКСТА */
 .greeting {
     color: #f3f3f3;
@@ -230,6 +240,7 @@ a:active {
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px transparent;
+    cursor: pointer;
 }
 .hvr-hang:hover, .hvr-hang:focus, .hvr-hang:active {
     -webkit-animation-name: hvr-hang-sink, hvr-hang;
@@ -318,10 +329,6 @@ a:active {
 
 /*-------------------- ПОЧЕМУ Я? --------------------*/
 /*  СЛАЙДЕР  */
-.slider-block {
-    padding-top: 120px;
-}
-
 .slider {
     outline: 8px dashed #fdf6e3;
     -webkit-transition: .7s ease-in-out;
@@ -373,28 +380,24 @@ aside[id="slidr-id-control"] .slidr-control.right {
     padding-top: 5px;
 }
 
-.error-text {
-    background: rgba(181, 51, 51, 0.3); /* Цвет фона */
+/* РЕАКЦИЯ НА ОТПРАВКУ СООБЩЕНИЯ */
+#reactionOnSending {
     border-radius: 5px;
-    color: darkred;
     font-family: 'Roboto Mono', monospace;
     font-weight: 400;
     font-size: 17px;
     padding-top: 8px;
     text-align: center;
-    visibility: hidden;
+}
+
+.error-text {
+    background: rgba(181, 51, 51, 0.3);
+    color: darkred;
 }
 
 .sucsess-text {
-    background: rgba(113, 183, 131, 0.3); /* Цвет фона */
-    border-radius: 5px;
+    background: rgba(113, 183, 131, 0.3);
     color: #128b4c;
-    font-family: 'Roboto Mono', monospace;
-    font-weight: 400;
-    font-size: 17px;
-    padding-top: 8px;
-    text-align: center;
-    visibility: hidden;
 }
 
 /*  ЦВЕТ ТЕКСТА В PLACEHOLDER  */
