@@ -311,12 +311,11 @@ a:active {
 
 /* ИЗОБРАЖЕНИЯ РАБОТ */
 .portfolio-element div:first-child {
-    border-radius: 12px;
+    border-radius: 10px;
 }
 
 .portfolio-element div img {
-    height: 267px;
-    width: 267px;
+    border-radius: 10px;
 }
 
 /* ОФОРМЛЕНИЕ ТЕКСТА */
