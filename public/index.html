@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0" />
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/bootstrap-grid.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500&amp;subset=cyrillic" rel="stylesheet">
@@ -10,7 +11,7 @@
 </head>
 <body>
 <!--------------------------МЕНЮ-------------------------->
-<div class="scroll-circles">
+<div class="scroll-circles hidden-sm-down">
     <div class="circle">
         <img src="/images/circle.png" data-scroll-to="screen-greeting" class="row">
     </div>
@@ -33,19 +34,19 @@
 <!-----------------------ПРИВЕТСТВИЕ----------------------->
 <div class="container-fluid screen bg-lilac" id="screen-greeting">
     <div class="row justify-content-center">
-        <div class="greeting">Привет! Меня зовут Букирёва Людмила.<br>Я&nbsp;&mdash; frontend&#8209;разработчик. Листай вниз и узнай обо мне
-            больше.
+        <div class="greeting">Привет! Меня зовут Букирёва Людмила.<br>
+            Я&nbsp;&mdash; frontend&#8209;разработчик. Листай вниз и узнай обо мне больше.
         </div>
     </div>
     <div class="row justify-content-center">
-        <img src="/images/myPhoto.png" alt="Это я">
+        <img class = "portret" src="/images/myPhoto.png" alt="Это я">
     </div>
     <div class="row justify-content-center">
         <div class="padding-top-sm">
             <button type="button" class="btn btn-secondary color-lilac my-btn bg-white cursor-pointer" onclick="window.open('https://drive.google.com/open?id=0B64W_sTmWrgEVHA0MlEwRFFaYU0')">Резюме</button>
         </div>
     </div>
-    <div class="row justify-content-center">
+    <div class="row justify-content-center hidden-sm-down">
         <div class="padding-top-lg">
             <div class="arrow">
                 <div class="hvr-hang"><img src="/images/arrow.png" alt="стрелка"></div>
