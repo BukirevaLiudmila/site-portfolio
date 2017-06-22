@@ -4,6 +4,12 @@
     font-size: 22px;
 }
 
+@media screen and (max-width: 768px) {
+    * {
+        font-size: 18px;
+    }
+}
+
 span {
     color: #586e75;
     font-size: 18px;
@@ -23,7 +29,7 @@ span {
 }
 @media screen and (max-width: 768px) {
     .screen {
-        height: 730px;
+        height: 100vh;
     }
 }
 
@@ -72,8 +78,24 @@ form > div.row {
     }
 }
 
-.padding-top-sm {
+.resume-button-padding {
     padding-top: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    .resume-button-padding {
+        padding-top: 60px;
+    }
+}
+
+.section-name-padding {
+    padding-top: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    .section-name-padding {
+        padding-top: 40px;
+    }
 }
 
 /*  ОФОРМЛЕНИЕ ФОНА */
@@ -206,9 +228,7 @@ a:active {
 @media screen and (max-width: 768px) {
     .greeting {
         font-size: 18px;
-        margin: 0 20px;
-        padding-top: 70px;
-        padding-bottom: 30px;
+        padding: 70px 30px 50px;
     }
     .portret {
         width: 200px;
@@ -297,6 +317,15 @@ a:active {
     }
 }
 
+@media screen and (max-width: 768px) {
+    .container {
+        width: 80%;
+    }
+    .container:first-child {
+        padding-top: 60px;
+    }
+}
+
 /* ПОЛОСЫ НАВЫКОВ */
 .progress-bar {
     -webkit-transition-duration: 2s;
@@ -310,12 +339,38 @@ a:active {
     font-weight: 300;
 }
 
+@media screen and (max-width: 768px) {
+    .progress-font {
+        font-size: 16px;
+    }
+}
+
+.progress-padding-top {
+    padding-top: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    .progress-padding-top {
+        padding-top: 40px;
+    }
+}
+
 /*-------------------- ОБРАЗОВАНИЕ --------------------*/
 /* ОФОРМЛЕНИЕ ТЕКСТА */
 .education {
     font-size: 20px;
     font-weight: 300;
     padding-top: 200px;
+}
+
+@media screen and (max-width: 768px) {
+    .education {
+        padding-top: 60px;
+    }
+}
+
+.education-item-padding {
+    padding-top: 50px;
 }
 
 /*-------------------- ПОРТФОЛИО --------------------*/
