@@ -74,7 +74,7 @@ form > div.row {
 
 @media screen and (max-width: 768px) {
     .padding-top-lg {
-        padding-top: 10px;
+        padding-top: 100px;
     }
 }
 
@@ -169,6 +169,12 @@ form > div.row {
     padding-right: 30px;
 }
 
+@media screen and (max-width: 768px) {
+    .my-btn {
+        font-size: 15px;
+    }
+}
+
 .my-btn:hover {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
@@ -199,16 +205,6 @@ a:active {
 }
 
 /*-------------------- ПРИВЕТСТВИЕ --------------------*/
-.arrow {
-    padding-top: 20px;
-}
-
-@media screen and (max-width: 1440px) {
-    .arrow {
-        padding-top: 10px;
-    }
-}
-
 /*  ОФОРМЛЕНИЕ ТЕКСТА */
 .greeting {
     color: #f3f3f3;
@@ -220,6 +216,7 @@ a:active {
 
 @media screen and (max-width: 1440px) {
     .greeting {
+        font-size: 20px;
         padding-top: 100px;
         padding-bottom: 70px;
     }
@@ -227,12 +224,22 @@ a:active {
 
 @media screen and (max-width: 768px) {
     .greeting {
-        font-size: 18px;
-        padding: 70px 30px 50px;
+        font-size: 15px;
+        padding: 90px 30px 50px;
     }
-    .portret {
+    .portret img {
         width: 200px;
         height: 200px;
+    }
+}
+
+.arrow-padding {
+    padding-top: 220px;
+}
+
+@media screen and (max-width: 1440px) {
+    .arrow-padding {
+        padding-top: 200px;
     }
 }
 
@@ -365,7 +372,7 @@ a:active {
 
 @media screen and (max-width: 768px) {
     .education {
-        padding-top: 60px;
+        padding-top: 80px;
     }
 }
 
@@ -377,8 +384,9 @@ a:active {
 /* ОФОРМЛЕНИЕ РАБОТ */
 .portfolio-element {
     cursor: pointer;
-    padding: 0 3vw;
+    padding: 0 3vw 30px 3vw;
 }
+
 .portfolio-element:hover div:first-child{
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
@@ -396,12 +404,25 @@ a:active {
     border-radius: 10px;
 }
 
+@media screen and (max-width: 768px) {
+    .portfolio-element div img {
+        width: 220px;
+        height: 140px;
+    }
+}
+
 /* ОФОРМЛЕНИЕ ТЕКСТА */
 .portfolio-element div:last-child {
     font-size: 19px;
     font-weight: 300;
     text-align: center;
     padding-top: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .portfolio-element div:last-child {
+        font-size: 15px;
+    }
 }
 
 /*-------------------- ПОЧЕМУ Я? --------------------*/
